@@ -181,7 +181,7 @@ class ReactComp extends Component {
   }
 
   getKeys = (item, index) => {
-    if (item && item.key) return item.key;
+    if (item && item.reservation && item.reservation.key) return item.reservation.key;
     return String(index);
   }
 
